@@ -1,8 +1,20 @@
 *.class
 *.log
-.idea
 
+# sbt
 bin/
-project/
+project/target
 target/
 build/
+
+# bloop and metals
+.bloop
+.bsp
+.metals
+
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
