@@ -1,0 +1,1 @@
+<logger name="scala.slick.jdbc.JdbcBackend.statement" level="DEBUG"/>
