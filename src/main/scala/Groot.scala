@@ -1,10 +1,6 @@
-import components.Components
-import components.config.ConfigLoader
+import components.GrootApp
 
 
-object Groot extends App {
-  val config = new ConfigLoader().load()
-  val components = new Components(config)
-
+object Groot extends App with GrootApp {
   components.printer.print_anything()
 }
