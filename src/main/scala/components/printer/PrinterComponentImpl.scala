@@ -1,10 +1,10 @@
 package components.printer
 
-import components.config.ConfigImpl
+import components.config.ConfigAware
 
 trait PrinterComponentImpl
   extends PrinterComponentAware
-    with ConfigImpl {
+    with ConfigAware {
 
   val printer: Printer = new Printer(conf.getString("printer.anything"))
 }
